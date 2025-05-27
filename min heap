@@ -1,0 +1,20 @@
+import java.util.PriorityQueue;
+
+public class MinHeapDemo {
+    public static void main(String[] args) {
+        // Java's PriorityQueue is by default a Min Heap
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+        // Inserting elements
+        minHeap.add(30);
+        minHeap.add(10);
+        minHeap.add(20);
+        minHeap.add(5);
+
+        System.out.println("Min Heap (root is smallest):");
+
+        while (!minHeap.isEmpty()) {
+            System.out.print(minHeap.poll() + " "); // Always removes the min element
+        }
+    }
+}
